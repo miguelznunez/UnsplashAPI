@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Comfortaa', cursive;
+  background-color: black;
+  color: white;
+}
+
+header{
+  border-bottom: 5px solid orange;
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+
+.nav h2{
+  font-size: 2rem;
+}
+
+.search-box{
+  position: relative;
+  width: 350px;
+}
+
+.search-box input{
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 25px;
+  outline: none;
+
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+  border: 1px solid #DDDDDD;
+}
+ 
+input:focus{
+  box-shadow: 0 0 5px orange;
+  border: 1px solid orange;
+}
+
+.search-box i{
+  color: black;
+  position: absolute;
+  top: 25%;
+  right: 4%;
+  transition: 1s;
+}
+
+.search-box i:hover{
+  color: orange;
+}
+
+.grid{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.img{
+  width: 380px;
+  height: 200px;
+  margin-top: 15px;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+@media(max-width:768px){
+  .img{
+    width: 100%;
+  }
+
+  .nav{
+    justify-content: center;
+  }
+
+  .nav h2{
+    padding: 5px 0;
+  }
+}
+
+@media(max-width:480px){
+  .nav h2{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .search-box{
+    width: 80%;
+    margin: auto;
+  }
+  .search-box input{
+    font-size: .7rem;
+  }
+}
