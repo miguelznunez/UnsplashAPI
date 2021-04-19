@@ -49,8 +49,8 @@ function dayNightMode(){
   const date = new Date();
   const hour = date.getHours();
 
-  if(hour >= 7 && hour <= 19){
-    document.body.style.backgroundColor = 'whitesmoke';
+  if(hour >= 7 && hour < 19){
+    document.body.style.backgroundColor = 'white';
     document.body.style.color = 'black';
   }
   else{
