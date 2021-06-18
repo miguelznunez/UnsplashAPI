@@ -33,7 +33,7 @@ function createImagesArray(data){
   for(let i = 0;i < data.results.length;i++){
     imageNodes[i] = document.createElement("div");
     imageNodes[i].className = "img";
-    imageNodes[i].style.backgroundImage = "url("+data.results[i].urls.raw+")";
+    imageNodes[i].style.backgroundImage = "url("+data.results[i].urls.raw + "&w=1366&h=768" +")";
     imageNodes[i].addEventListener("dblclick", function(){
       window.open(data.results[i].links.download, '_blank');
     })
