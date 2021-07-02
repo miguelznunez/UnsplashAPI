@@ -12,7 +12,7 @@ function loadImg(){
 
   removeImages();
   //YOUR API KEY GOES HERE client_id=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;
-  const url = 'https://api.unsplash.com/search/photos?query='+input.value+'&per_page=9&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo';
+  const url = 'https://api.unsplash.com/search/photos?query='+input.value+'&per_page=30&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo';
 
   fetch(url)
 
