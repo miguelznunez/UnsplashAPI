@@ -9,6 +9,7 @@ body{
   font-family: 'Comfortaa', cursive;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 header{
@@ -16,15 +17,17 @@ header{
 }
 
 .container{
-  width: 95%;
+  width: 1280px;
   margin: auto;
 }
 
 .nav{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 25px 0;
+  min-height: 70px;
+  padding: 0 20px;
 }
 
 .nav h2{
@@ -60,6 +63,7 @@ input:focus{
 .search-box i{
   color: black;
   position: absolute;
+  cursor: pointer;
   top: 25%;
   right: 4%;
   transition: 1s;
@@ -79,11 +83,18 @@ input:focus{
 
 .img{
   width: 380px;
-  height: 200px;
+  height: 214px;
   margin-top: 15px;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
   border-radius: 2px;
+  cursor: pointer;
+}
+
+@media(max-width:1280px){
+  .container{
+    width: 95%;
+  }
 }
 
 @media(max-width:768px){
@@ -92,6 +103,7 @@ input:focus{
   }
 
   .nav{
+    margin: 10px 0;
     justify-content: center;
   }
 
