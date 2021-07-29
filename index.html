@@ -9,21 +9,19 @@
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <div class="nav">
-        <h2><i class="fas fa-camera" style="color: orange;"></i> Unsplash API Demo
-        </h2>
-        <div class="search-box">
-          <input id="input" type="text" placeholder="Search..."><i onclick="loadImg()" class="fas fa-search"></i>
-        </div>
+  <main id="main">
+
+    <header id="header">
+      <h2><i class="fas fa-camera" style="color: orange;"></i> Unsplash API Demo
+      </h2>
+      <div id="search_box">
+        <input id="input" type="text" placeholder="Search..."><i id="search" class="fas fa-search"></i>
       </div>
-    </div>
-  </header>
-  
-  <div class="container">
-    <div class="grid"></div>
-  </div>
+    </header>
+    
+    <div id="grid"></div>
+
+  </main>
   
   <script src="script.js"></script>
 </body>
