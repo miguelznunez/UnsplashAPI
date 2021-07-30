@@ -101,22 +101,19 @@ input:focus{
     justify-content: center;
   }
 
-  #header h2{
-    padding: 5px 0;
-  }
+  #header h2{padding: 5px 0;}
 }
 
 @media(max-width:480px){
-  .nav h2{
+  #header h2{
     text-align: center;
     font-size: 1.5rem;
   }
 
-  .search-box{
+  #search_box{
     width: 80%;
     margin: auto;
   }
-  .search-box input{
-    font-size: .7rem;
-  }
+
+  #search_box input{font-size: .7rem;}
 }
