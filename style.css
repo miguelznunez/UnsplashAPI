@@ -12,7 +12,7 @@ body{
   overflow-x: hidden;
 }
 
-#main{
+.container{
   width: 1280px;
   margin: auto;
 }
@@ -86,7 +86,7 @@ input:focus{
 }
 
 @media(max-width:1280px){
- #main{width: 100%;}
+ .container{width: 100%;}
 }
 
 @media(max-width:768px){
